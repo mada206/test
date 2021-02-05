@@ -1,0 +1,27 @@
+.HeadingTextStyle{
+  text-align: start ;
+  font-weight: bold;
+}
+.ImagePadding{
+  padding-top: 15px;
+}
+.CommentBody{
+  padding-top: 20px;
+  padding-right: 30px
+}
+.MarginsBeetween{
+  margin-top: 30px
+}
+.MarginsOfTitle{
+  margin-bottom: 20px;
+}
+.MarginsBeetweenSpans{
+  margin-right: 15px;
+}
+.SpanStyle{
+  margin-left: 15px;
+  font-weight: lighter
+}
+.TextBreak{
+  word-break: break-word;
+}

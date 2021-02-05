@@ -1,0 +1,9 @@
+<div class="row mb-2 d-flex align-items-stretch" *ngIf="post">
+  <div class="col-md-6 px-4 " >
+    <img src="{{post.urlToImage}}"  class="img-fluid"  >
+  </div>
+  <div class="col-md-6 m-sm-3 m-md-0 m-lr-0 padding-post">
+    <h6 class="break-post">{{post.title}}</h6>
+    <p class="break-post" >{{post.publishedAt | date:'short'}}</p>
+  </div>
+</div>

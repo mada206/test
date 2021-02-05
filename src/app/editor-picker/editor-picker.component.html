@@ -1,0 +1,11 @@
+<div class="row"  id="margin-editor">
+<div  class="col-6 col-sm-3" id="justify-editor-image" *ngIf="editorPicker">
+  <img src="{{editorPicker.urlToImage}}" class="img-fluid"  >
+</div>
+<div class="col-6 col-sm-9" *ngIf="editorPicker" >
+  <p id="font-editor-title">{{editorPicker.title}}</p>
+  <p>{{editorPicker.publishedAt }}</p>
+</div>
+</div>
+
+

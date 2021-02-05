@@ -1,0 +1,11 @@
+<form #commentForm="ngForm">
+  <div class="col-md-6 col-sm-12 mb-3" >
+    <input class="form-control" name="username"  type="text" placeholder="Name" ngModel>
+  </div>
+  <div class="col-md-6 col-sm-12  mb-3" >
+    <input class="form-control"  name="email" type="email" placeholder="Email" ngModel>
+    <small class="form-text text-muted">Email will Not Published</small>
+  </div>
+  <textarea class="form-control mb-3" rows="3" name="message" ngModel>Message</textarea>
+  <button type="button" class="btn btn-danger col-md-2 col-sm-3" style="text-align: center">Send</button>
+</form>

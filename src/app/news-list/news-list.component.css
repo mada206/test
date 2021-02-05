@@ -1,0 +1,15 @@
+#main-header{
+  text-align: center;
+  font-weight: bold;
+}
+#editor-header{
+  margin-top: 70px;
+  margin-left: 20px;
+  padding-bottom: 10px;;
+}
+#styling-image{
+  height: 250px;
+}
+.margin-between-borders{
+  margin-top: 60px;
+}

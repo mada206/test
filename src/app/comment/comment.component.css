@@ -1,0 +1,17 @@
+.ImagePadding{
+  padding-bottom: 15px;
+}
+.CommentBody{
+  padding-top: 20px;
+  padding-right: 20px
+}
+.TextBreak{
+  word-break: break-word;
+}
+.MarginsBeetweenSpans{
+  margin-right: 15px;
+}
+.SpanStyle{
+  margin-left: 15px;
+  font-weight: lighter
+}

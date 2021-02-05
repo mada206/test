@@ -1,0 +1,53 @@
+<h1 id="main-header" class="my-4"> Latest News</h1>
+<div class="container">
+  <div class="row">
+
+    <div class="col-12 col-lg-8">
+      <div class="row">
+        <div class="col-12 col-md-8" >
+          <app-main-new [news]="news1" ></app-main-new>
+        </div>
+        <div class="col-12 col-md-4"  >
+          <app-secondary-news *ngFor="let n of news2" [secNews]="n"></app-secondary-news>
+        </div>
+      </div>
+      <h4 id="editor-header">Editor Picker</h4>
+      <div class="col-12">
+        <div class="container">
+            <app-editor-picker [editorPicker]="n" *ngFor="let n of news4"></app-editor-picker>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+        <div class="border">
+          <h4 style="color: crimson" class="p-3">Recent Posts</h4>
+          <app-recent-posts *ngFor="let n of news3" [post]="n" ></app-recent-posts>
+
+        </div>
+        <div class="border margin-between-borders">
+          <h4 style="color: crimson" class="p-3">Most Popular</h4>
+          <app-most-pobular *ngFor="let n of news3 " [pobularPost]="n" >
+          </app-most-pobular>
+
+        </div>
+        <div class="border margin-between-borders">
+          <h4 style="color: crimson"  class="p-3">Good News Newsetter</h4>
+          <p  class="px-3">Subscribe in our mail newsLetter For Good news</p>
+         <app-subscribe-form></app-subscribe-form>
+        </div>
+    </div>
+
+  </div>
+  <hr>
+  <div class="row" >
+    <div class=" col-md-4" *ngFor="let n of news4">
+      <div>
+        <img src="{{n.urlToImage}}" class="img-fluid" id="styling-image" >
+      </div>
+      <div *ngFor="let ne of news4" class="p-1">
+      <p> {{ne.title}}</p>
+        <hr >
+      </div>
+    </div>
+  </div>
+</div>
